@@ -1,0 +1,486 @@
+/* /* INDEX.HTML*/
+.html-body{
+  padding: 0;
+  margin: 0;
+  background-color: #162721;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  gap: 80px;
+}
+ul li a {
+  text-decoration: none;
+  color: #15ff00;
+}
+.Index{
+    color: white;
+    align-items: center;
+    justify-items: center;
+} 
+
+/* BOTONES DEL MENÚ JOMAR */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 22px;
+
+    color: #f4f7f4;
+    background: transparent;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    border: 1px solid rgba(126, 214, 165, 0.45);
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+/* Brillo verde al pasar el mouse */
+nav ul li a:hover {
+    color: #a8ffc7;
+    background: rgba(46, 139, 87, 0.12);
+
+    border-color: #4caf7d;
+    box-shadow:
+        0 0 8px rgba(76, 175, 125, 0.35),
+        inset 0 0 8px rgba(76, 175, 125, 0.08);
+
+    transform: translateY(-2px);
+}
+
+/* Indicación al navegar con teclado */
+nav ul li a:focus-visible {
+    outline: 2px solid #7ed6a5;
+    outline-offset: 4px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 16px;
+    }
+}
+
+
+/* Contacto */
+.body-contacto{
+  color: white;
+  background-color: #162721;
+}
+.contenedor-formulario {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.Formulario{
+  text-align: center;
+}
+
+.Titulo{
+  text-align: center;
+}
+
+button {
+    display: block;
+    margin: 5px auto 0;
+
+    padding: 12px 35px;
+    background: #2e8b57;
+    color: white;
+
+    border: 2px solid #4caf7d;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #4caf7d;
+    border-color: #7ed6a5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(76, 175, 125, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+
+}
+  
+/* fORMULARIO  */
+{background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(126, 214, 165, 0.35);
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+
+    text-align: left;
+}
+
+.Titulo {
+    color: white;
+    text-align: center;
+
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.Formulario label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #dff7e8;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Formulario input,
+.Formulario textarea,
+.Formulario select {
+    width: 100%;
+
+    padding: 11px 13px;
+
+    margin-bottom: 16px;
+
+    color: white;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(126, 214, 165, 0.35);
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.Formulario input::placeholder,
+.Formulario textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Formulario input:focus,
+.Formulario textarea:focus,
+.Formulario select:focus {
+    border-color: #4caf7d;
+
+    box-shadow:
+        0 0 8px rgba(76, 175, 125, 0.3);
+
+    background: rgba(76, 175, 125, 0.08);
+}
+
+.Formulario textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.Formulario button {
+    display: block;
+
+    margin: 5px auto 0;
+
+    padding: 11px 32px;
+
+    color: white;
+
+    background: transparent;
+
+    border: 1px solid #4caf7d;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.Formulario button:hover {
+    color: white;
+
+    background: #2e8b57;
+
+    border-color: #7ed6a5;
+
+    box-shadow:
+        0 0 12px rgba(76, 175, 125, 0.4),
+        0 5px 15px rgba(0, 0, 0, 0.2);
+
+    transform: translateY(-2px);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    .Formulario {
+        width: 92%;
+
+        padding: 22px;
+
+        margin: 25px auto;
+    }
+
+    .Titulo {
+        font-size: 24px;
+    }
+
+    .Formulario input,
+    .Formulario textarea,
+    .Formulario select {
+        padding: 12px;
+    }
+
+    .Formulario button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+   /* Nosotros */
+    
+   .cuerpo{
+        background: #162721;
+        color: white;
+    }
+
+    .Titulo de Nosotros{
+        text-align: center;
+        text-justify: center;
+    }
+.sobre-nosotros {
+    padding: 30px 5%;
+    color: white;
+}
+
+.sobre-nosotros h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.sobre-card {
+    background: #1b342b;
+    border: 1px solid #355847;
+    border-radius: 12px;
+    padding: 22px 25px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.sobre-card h2 {
+    color: #83c99a;
+    font-size: 21px;
+    margin-top: 0;
+}
+
+.sobre-card p {
+    color: #e1eae4;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.sobre-card:hover {
+    transform: translateY(-4px);
+    border-color: #83c99a;
+}
+
+/* Sección misión y visión */
+.mision-vision {
+    background-color: #10251f;
+    color: #ffffff;
+}
+
+.tarjeta-info {
+    background-color: #1b342b;
+    color: #e1eae4;
+    border: 1px solid #355847;
+    border-radius: 18px;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.tarjeta-info:hover {
+    transform: translateY(-5px);
+    border-color: #83c99a;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-info h2 {
+    color: #83c99a;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tarjeta-info p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.icono-info {
+    font-size: 38px;
+}
+
+/* Frase de cierre */
+.mensaje-final {
+    background: linear-gradient(135deg, #1b342b, #254b39);
+    border: 1px solid #456b51;
+    border-radius: 18px;
+}
+
+.mensaje-final h3 {
+    color: #a4dfb3;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.mensaje-final p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 576px) {
+    .tarjeta-info h2 {
+        font-size: 23px;
+    }
+
+    .mensaje-final h3 {
+        font-size: 21px;
+    }
+
+    .mensaje-final p {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*  DISEÑO RESPONSIVE - CELULAR */
+
+@media (max-width: 768px) {
+
+    /* Evita que la página se salga de la pantalla */
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* HEADER*/
+
+    .Index {
+        width: 100%;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .Contenedor-logo img {
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+    }
+
+    .Index h1 {
+        font-size: 28px;
+        margin: 5px 0 10px;
+    }
+
+
+    /* MENU*/
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        gap: 12px;
+
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 90%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+
+        font-size: 17px;
+    }

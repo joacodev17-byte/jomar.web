@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto.JOMAR</title>
+</head>
+<body class="body-contacto">
+    <header>
+           <div>
+
+        <img style="max-width: 80px;" src="../assets/img/Logotipo circular de aventura JOMAR.png"
+             alt="Logo JOMAR"
+             class="logo-sobre-nosotros d-flex align-items-center justify-content-center gap-3 mb-4">
+    </div>
+        <h1 class="Titulo">Contacto</h1>
+        <div class="contenedor-formulario">
+    <form class="Formulario">
+        <label for="Nombre y Apellido">Nombre y Apellido</label>
+        <input Nombre y Apellido type="text" placeholder="Nombre y Apellido" required>
+        <br>
+        <label for="Email">Email</label>
+        <input name="Email" type="email" placeholder="Email" required>
+        <br>
+        <label for="Fecha de nacimiento">Nacimiento</label>
+        <input name="Fecha de nacimiento" type="date">
+        <br>
+        <label for="WhatsApp">WhatsApp</label>
+       <input name="WhatsApp" type="tel" id="whatsapp" name="whatsapp" placeholder="+5491123456789" pattern="^\+[0-9]{7,15}$" title="Debe incluir el signo + seguido de 7 a 15 números, sin espacios ni guiones."required>
+       <br>
+       <label for="Mensaje">Mensaje</label>
+       <input name="Mensaje" type="text" placeholder="Deja tu mensaje">
+    <button type="submit">Enviar</button>
+    </div>
+    </form>
+    </header>
+</body>
+</html>
